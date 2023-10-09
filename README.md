@@ -1,3 +1,4 @@
+#nyuadlaundry.github.io
 ---
 layout: default
 title: Laundry App Coming Soon
