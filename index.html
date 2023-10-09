@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>LAUNDRY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="header">
+    <header>
+      <div class="container ">
+        <div class="navbar flex1">
+          <div class="logo">
+            <img src="image/logo.png" alt="">
+          </div>
+
+          <nav>
+            <ul id="menuitem">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#Overview">Overview</a></li>
+              <li><a href="#function">Functionalities</a></li>
+              <li><a href="#Features">Features</a></li>
+              <li><a href="#dowload">Download</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+            <button>Get Started</button>
+          </nav>
+          <span class="fa fa-bars" onclick="menutoggle()"></span>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "500px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+  <section class="home" id="home">
+    <div class="container flex1">
+      <div class="left">
+        <h1>Elevate Dorm Laundry Days</h1>
+        <p>Discover a new way to handle your laundry with our innovative and efficient laundry app</p>
+
+        <div class="button flex">
+          <button class="btn1">Explore Features </button>
+          <button class="btn2">Learn More</button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="img">
+          <img src="image/home.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="Overview mtop" id="Overview">
+    <br><br><br>
+    <div class="container">
+      <div class="heading">
+        <h1>App Overview</h1>
+        <p>Receive notifications when your laundry is done and get alerts if any unusual activity is detected.</p>
+      </div>
+
+   
+
+      <div class="content grid mtop">
+        <div class="box">
+            <div class="img">
+                <img src="image/o1.png" alt="">
+                <i class="fas fa-download"></i>
+            </div>
+            <div class="text">
+                <h3>Instant Notifications</h3>
+                <p>Stay in the loop with real-time updates. Receive notifications as soon as your laundry is done, ensuring you're always in control of your time.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="image/o2.png" alt="">
+                <i class="fas fa-edit"></i>
+            </div>
+            <div class="text">
+                <h3>Smart Reminders</h3>
+                <p>Forget about laundry-related worries. Our app sends intelligent reminders, ensuring you never miss a laundry cycle and always have clean clothes at hand.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="image/o3.png" alt="">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="text">
+                <h3>Security Alerts</h3>
+                <p>Your laundry's safety is our priority. Receive instant alerts if any unusual activity is detected, giving you peace of mind wherever you are.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+  <section class="function  top" id="function">
+    <div class="container">
+      <div class="heading">
+        <!-- <h1>Smart Laundry Solutions</h1>
+        <p>Never miss a laundry cycle. Our app sends smart reminders, ensuring you have fresh clothes when you need them.</p> -->
+      </div>
+
+      <div class="fun_content">
+        <div class="content flex mtop">
+          <div class="left">
+            <i class="fad fa-chart-bar"></i>
+            <!-- <h3>Security Alerts</h3>
+            <p>Your laundry's safety matters. Get instant alerts for any unusual activity, ensuring your clothes are always protected.</p> -->
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+          <div class="right">
+            <div class="img">
+              <img src="image/f1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="content flex mtop">
+          <div class="left">
+            <i class="fad fa-print-search"></i>
+            <h3>Elevating Student Laundry Experience</h3>
+            <p>Embark on a journey where laundry isn't just a chore but a delightful experience. Our app is tailored to serve the community, ensuring a seamless and efficient laundry process. No need to wonder about beautiful designs; we've mastered the art of transforming laundry for a better student lifestyle.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="right">
+            <div class="img">
+              <img src="image/f3.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="content flex mtop">
+          <div class="left">
+            <i class="fas fa-rocket"></i>
+            <h3>Revolutionary Laundry Experience Awaits</h3>
+            <p>Curious about how our laundry app transforms the mundane task into a seamless and enjoyable experience? It's not just about talent; it's about the innovative features that empower even beginners to achieve laundry excellence. Explore a new era in laundry care!</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="right">
+            <div class="img">
+              <img src="image/f5.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Features mtop" id="Features">
+    <div class="container">
+      <div class="heading">
+        <h1>Exclusive Features</h1>
+        <!-- <p>Elevate your laundry experience with our exclusive features that redefine convenience and care. Immerse yourself in a world where your laundry is pampered and protected, ensuring a seamless and delightful journey from start to finish. </p> -->
+      </div>
+
+      <div class="content flex mtop">
+        <div class="left grid">
+          <div class="box">
+            <div class="img">
+              <i class="far fa-gem"></i>
+            </div>
+            <h3>Unique Design</h3>
+            <p>Experience a laundry solution like no other. Our unique design sets us apart, ensuring you encounter unmatched functionality and efficiency. Don't settle for the ordinary; embrace the extraordinary with our innovative approach.</p>
+          </div>
+          <div class="box">
+            <div class="img">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Clean Code</h3>
+            <p>Behind the scenes, our code is a masterpiece—clean, efficient, and free of unnecessary complexities. Experience seamless interactions and reliable performance, driven by a commitment to excellence in every line of code.</p>
+          </div>
+          <div class="box">
+            <div class="img">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <h3>Retina Ready</h3>
+            <p>Indulge your senses with visuals so crisp and vibrant that every pixel comes alive. Our app ensures a Retina-ready display, delivering stunning graphics that captivate and elevate your laundry experience</p>
+          </div>
+          <div class="box">
+            <div class="img">
+              <i class="fas fa-air-freshener"></i>
+            </div>
+            <h3>Pixel Perfect</h3>
+            <p>Impeccable details, flawless execution. Our commitment to perfection ensures your laundry experience is seamless and stress-free. Leave behind uncertainties and embrace the clarity of pixel-perfect service</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="image">
+            <img src="image/fe.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dowload" id="dowload">
+    <div class="container flex">
+      <div class="left">
+        <h1>Get App Now!</h1>
+        <p>Experience the ease of managing your laundry like never before. Embrace the future of laundry services designed for you. Download now and enjoy the freedom from worries, with every wash!</p>
+
+        <div class="flex">
+          <div class="box flex">
+            <div class="img">
+              <i class="fab fa-apple"></i>
+            </div>
+            <div class="text">
+              <span>Download on the</span>
+              <h2>App Store</h2>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <i class="fab fa-android"></i>
+            </div>
+            <div class="text">
+              <span>Download on the</span>
+              <h2>Google Play </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img src="image/d1.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="team top" id="team">
+    <div class="container">
+      <div class="heading">
+        <h1>Trusted By Students</h1>
+        <p>Embraced by NYUAD Students,
+          Redefining Laundry Experience.</p>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <img src="image/t1.png" alt="">
+        </div>
+        <div class="box">
+          <img src="image/t2.png" alt="">
+        </div>
+        <div class="box">
+          <img src="image/t3.png" alt="">
+        </div>
+        <div class="box">
+          <img src="image/t4.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+     <div class="container grid">
+      <!-- <div class="box">
+         <img src="image/logo2.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p> --> 
+        <!-- <div class="social">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div> --> 
+
+      <!-- <div class="box">
+        <h3>Post Tags</h3>
+        <button>App</button>
+        <button>Business</button>
+        <button>Corporate</button>
+        <button>Creative</button>
+        <button>Design</button>
+        <button>Fasion</button>
+        <button>Food</button>
+        <button>Mobile</button>
+        <button>Music</button>
+        <button>Travel</button>
+      </div> -->
+
+      <!-- <div class="box">
+        <h3>Blog Categories</h3>
+        <ul>
+          <li>App Review</li>
+          <li>Audio Post</li>
+          <li>Default Post</li>
+          <li>Uncategorized</li>
+          <li>Video Post</li>
+          <li>Website Review</li>
+        </ul>
+      </div> -->
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i>A5-015, New York University Abu Dhabi, Sadiyaat Island, Abu Dhabi</li>
+          <li><i class="fas fa-mobile-alt"></i> +97126284000</li>
+          <li><i class="far fa-envelope"></i>code@nyuad.io</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
